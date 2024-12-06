@@ -2,27 +2,16 @@
 <html lang="eng CA">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Albert Sans" rel="stylesheet">
+  
   <title> Xenia Taler </title>
+  
   <style>
-    .central-div {
-      width: 1200px;
-      height: 840px;
-      background-color: #f3eeeb;}
     
-    div.column1 {
-      width: 30%;
-      padding: 20px;
-      float: left;
-      }
-    
-     div.column2 {
-      width: 600px;
-      padding: 20px;
-      float: left;
-      }
-    
-    h1 {font-family: Albert Sans;
+    h1 {font-family: DM Sans;
       color: #303e30;
       width: 400px;}
     
@@ -33,6 +22,11 @@
       font-size: 18px;
       color: #303e30;}
     
+    h4 {font-family: Albert Sans;
+      font-size: 18px;
+      color: 5F3B25;
+    }
+    
     p {font-family: Albert Sans;
       font-size: 14px;
       color: #767e78;}
@@ -41,11 +35,77 @@
       color: #767e78;
       font-size: 14px;}
     
+      #blockA {
+      width: 100%;
+      height: 72px;
+      background-color: #F9D788;
+      position: fixed;
+      display: flex;
+      align-items: center; 
+      justify-content: center; /* cite this */
+    }
+
+    .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+    
    </style>
 </head>
   
 <body>
   
-  </body>
+  <div id="blockA">
+    <h4>FREE SHIPPING FOR ORDERS OVER $150!</h4>
+    <div class="dropdown" style="float:right;">
+    <button class="dropbtn">Right</button>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+  </div>
+    
+    
+  
+  
+</body>
 
 </html>
