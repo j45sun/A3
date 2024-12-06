@@ -47,9 +47,13 @@
       color: #6C6B6B;
       font-size: 14px;
       list-style-type: none;
-      display: flex;
-      margin: 0;
-      padding: 0;  
+      overflow: hidden;
+      background-color: transparent;
+      position: absolute;
+        
+      display: flex; /* Use flexbox to align list items horizontally */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */;  
     }
 
     li {
@@ -105,8 +109,9 @@
       top: 136px;
       border: 1px solid #EDEDED;
       display: flex;
-      justify-content: center;
-      align-items: center;  
+      justify-content: center; /* Center horizontally */
+      align-items: center;     /* Center vertically */
+      
     }    
     
     #blockD {
