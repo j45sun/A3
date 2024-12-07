@@ -36,6 +36,13 @@
     h4 {font-family: Albert Sans;
       font-size: 12px;
       color: #5F3B25;
+      letter-spacing: 1px;
+    }
+    
+     h5 {font-family: Albert Sans;
+      font-size: 50px;
+      color: white;
+      letter-spacing: 1px;
     }
     
     p {font-family: Albert Sans;
@@ -123,7 +130,44 @@
       border-radius: 21px;
     }   
     
+    #blockE {
+      width: 100%;
+      height: 400px;
+      position: relative; /* Stacks #blockE in the normal flow below #blockC */
+      top: 178px;  /* Ensures it appears below blockC (136px height + extra spacing) */
+    }
+
+    #blockE img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* cite this */
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 10%;
+      left: 200;
+      
+    }
+
+    .text-overlay h1 {
+      margin: -10;
+      color: white;
+      font-size: 80;
+    }
     
+    .text-overlay h2 {
+      color: white;
+      font-size: 14;
+    }
+    
+    #blockF {
+      width: 200px;
+      height: 42px;
+      background-color: white;
+      left: 200px;
+      border-radius: 21px;
+    }   
     
    </style>
 </head>
@@ -137,6 +181,21 @@
   <div id="blockB">
     <h1>XENIA TALER</h1>
   </div>
+  
+  <div id="blockE">
+    <div class="text-overlay">
+      <h2>Xenia Taler's</h2>
+      <h1>ANNUAL HOLIDAY <br> SALE!</h1>
+      <div id="blockF">
+        
+      </div>
+    </div>
+    <img src="Annual Holiday Sale.png" alt="Annual Holiday Sale">
+  </div>
+
+    
+ 
+  
   
   <div id="blockC">
      <ul>
@@ -152,8 +211,7 @@
   
   <div id="blockD">
   </div>
-  
-  
+   
 </body>
 
 </html>
