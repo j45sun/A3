@@ -283,6 +283,7 @@
       flex-wrap: wrap;
       align-items: center; 
       justify-content: center;
+    position: relative; 
     }
     
     #blockI1 { 
@@ -319,9 +320,34 @@
       width: 700px;
       height: 50px;
       background-color: white;
+      display: flex;
       border-radius: 25px;
     }
     
+    #blockI2 h3 {
+      color: #ACACAC;
+      letter-spacing: 1px;
+      padding-left: 20px;
+    }
+    
+    #blockI3 {
+      width: 150px;
+      height: 50px;
+      background-color: #F9D788;
+      letter-spacing: 1px;
+      display: flex;
+      position: absolute;
+      margin-left: 550px; 
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+   
+    }
+    
+     #blockI3 h3 {
+      color: #524F4F;
+      letter-spacing: 1px;
+      padding-left: 40px;
+    }
     
    </style>
 </head>
@@ -398,11 +424,22 @@
       </h2>
       
       <div id="blockI2">
-    </div>
+        <h3>
+          Enter your email address
+        </h3>
+        
+        <div id="blockI3">
+          <h3>
+            Sign up
+          </h3>
+      </div>
+        
+      </div>
       
       <h4>
         Already have an account? <u>Log in</u>
       </h4>
+      
       
     </div>
   
