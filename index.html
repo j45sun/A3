@@ -28,23 +28,24 @@
     
     h2 {font-family: Albert Sans;
       color: #403F3F;
-      font-size: 16px;}
+      font-size: 30px;}
     
     h3 {font-family: Albert Sans;
-      font-size: 12px;
-      color: #403F3F;}
+      font-size: 16px;
+      color: #403F3F;
+    }
+    
     
     h4 {font-family: Albert Sans;
       font-size: 12px;
-      color: #5F3B25;
-      letter-spacing: 1px;
+      color: #403F3F;
     }
     
     p {font-family: Albert Sans;
-      font-size: 14px;
+      font-size: 8px;
       color: #767e78;}
     
-    h1, h2, h3, h4, p, ul, li, a {
+    h1, h2, h3, h4, h5, h6, p, ul, li, a {
       font-weight: 400;
     }
 
@@ -96,6 +97,11 @@
       display: flex;
       align-items: center; 
       justify-content: center; /* cite this */
+      z-index: 1000; /*cite this*/
+    }
+    
+    #blockA h4 {
+      letter-spacing: 1px;
     }
     
     #blockB {
@@ -160,7 +166,7 @@
       font-size: 4vw; /* Scales with viewport width */
       margin: 0;
       line-height: 1.2; /* Better spacing between lines */
-      font-weight: bold;
+      letter-spacing: 3px;
     }
     
     .text-overlay h6 {
@@ -169,6 +175,7 @@
       font-weight: 400px;
       font-size: 1.5vw; /* Scales with viewport width */
       margin: 0px; /* Adds spacing below */
+      letter-spacing: 2px;
     }
     
     #blockF {
@@ -198,7 +205,7 @@
     #blockH {
       width: 1065px;;
       height: 300px;
-      background-color: yellow;
+      background-color: white;
       /* Set the desired height */ 
       position: relative; /* Maintain normal flow positioning */
       padding-top: 20px;
@@ -207,6 +214,10 @@
     }
     
     #blockH h3 {
+    letter-spacing: 1px;
+    }
+    
+    #blockH h4 {
     margin-top: 20px;
     line-height: 1.5;
     float: left;
@@ -287,6 +298,16 @@
       justify-content: center;
     }
     
+    #blockI1 h3 {
+      color: white;
+      letter-spacing: 1px;
+    }
+    
+     #blockI1 h4 {
+      color: white;
+       
+    }
+    
     
     
    </style>
@@ -302,18 +323,18 @@
   <div id="blockE">
     <div class="text-overlay">
       <h6>Xenia Taler's</h6>
-      <h5>ANNUAL HOLIDAY <br> SALE!</h5>
+      <h5> <b>ANNUAL HOLIDAY <br> SALE! </b> </h5>
       <div id="blockF">
-        <h2>
+        <h3>
           Shop Now >
-        </h2>
+        </h3>
       </div>
     </div>
     <img src="Annual Holiday Sale.png" alt="Annual Holiday Sale">
 
     
   <div id="blockH">
-    <h2>BESTSELLERS ></h2>
+    <h3>BESTSELLERS ></h3>
     
     <div id="blockH1">
       <img src="plate 1.png" alt="plate">
@@ -335,25 +356,35 @@
       <img src="plate 5.png" alt="plate">
     </div>
     
-    <h3>DINER CHECK DINNER <br> PLATE <br> <b>$14.00</b> </h3>
+    <h4>DINER CHECK DINNER <br> PLATE <br> <b>$14.00</b> </h4>
     
-    <h3>
+    <h4>
       PINK CHECK SIDE PLATE - <br> SET OF 4 <br> <b>
       <span style="text-decoration: line-through; color: #ACACAC;">$48.00</span> 
       <span style="color: #E76B6B;">$32.00</span>
       </b>
-    </h3>
+    </h4>
     
-    <h3>MARINA SIDE PLATE <br> <b> $14.00 </b> </h3>
+    <h4>MARINA SIDE PLATE <br> <b> $14.00 </b> </h4>
     
-    <h3>VALENCIA SIDE PLATE <br> <b> $12.00 </b> </h3>
+    <h4>VALENCIA SIDE PLATE <br> <b> $12.00 </b> </h4>
     
-    <h3>STRIPE BOWL - SET <br> OF 4 COLOURS <br> <b> $51.00 </b> </h3>
+    <h4>STRIPE BOWL - SET <br> OF 4 COLOURS <br> <b> $51.00 </b> </h4>
   </div>
     
   <div id="blockI">
     <img src="table.png" alt="table">
-    <div id="blockI1"
+    
+    <div id="blockI1">
+      <h3> 
+        Resister for exclusive email offers!
+      </h3>
+      
+      <h2>
+        <br>ADDITIONAL 10% OFF ON FIRST PURCHASE
+      </h2>
+    </div>
+    
     </div>
   </div>
   
