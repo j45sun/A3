@@ -110,20 +110,21 @@
     
     #blockC {
       width: 100%;
-      height: 42px;
+      height: 30px;
       background-color: white;
       position: fixed;
       top: 136px;
+      padding-top: 12px;
+      padding-left: 40px;
       border: 1px solid #EDEDED;
       display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center;     /* Center vertically */
+      
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
       /*cite this*/
-    }    
+    }
     
     #blockD {
-      width: 600px;
+      width: 700px;
       height: 42px;
       background-color: #F1F1F1;
       position: fixed;
@@ -148,24 +149,27 @@
 
     .text-overlay {
       position: absolute;
-      top: 10%;
-      left: 200;
+      
+      left: 10%;
       
     }
 
     .text-overlay h5 {
       font-family: Albert Sans;
-      margin: -10;
       color: white;
-      font-size: 80px;
-      line-height: 1;
+      font-size: 4vw; /* Scales with viewport width */
+      margin: -10;
+
+      line-height: 1.2; /* Better spacing between lines */
+      font-weight: bold;
     }
     
     .text-overlay h6 {
       font-family: Albert Sans;
       color: white;
-      font-size: 14px;
       font-weight: 400px;
+      font-size: 1.5vw; /* Scales with viewport width */
+      margin-bottom: 20px; /* Adds spacing below */
     }
     
     #blockF {
@@ -194,10 +198,13 @@
     
     #blockH {
       width: 1065px;;
-      height: 400px; /* Set the desired height */ 
+      height: 400px;
+      color: yellow;
+      /* Set the desired height */ 
       position: relative; /* Maintain normal flow positioning */
       padding-top: 20px;
       padding-left: 270px;
+      
     }
     
     #blockH h3 {
@@ -322,8 +329,6 @@
     <h3>VALENCIA SIDE PLATE <br> <b> $12.00 </b> </h3>
     
     <h3>STRIPE BOWL - SET <br> OF 4 COLOURS <br> <b> $51.00 </b> </h3>
-    
-    
   </div>
   
   <div id="blockC">
