@@ -21,7 +21,7 @@
   Code copied from: https://www.w3schools.com/icons/default.asp
   Author: W3Schools
   Name: Icons Tutorial
-  Description: The Links above are used for icons
+  Description: Links are used for icons, icons declared in HTML section is referenced from w3schools
   Date retrieved: 6 December 2024
   -->
   
@@ -80,7 +80,7 @@
     }
     
     a {
-    color: inherit;
+    color: inherit; /* inherit the colour stated in the h and p styling */
     text-decoration: none;
     }
     
@@ -134,7 +134,7 @@
       display: flex;
       align-items: center; 
       justify-content: center; 
-      z-index: 1000; 
+      z-index: 1000;  /* a high amount is given to the z-index so that it ensures blockA always remains at the top */
     } 
     
     /*Code copied from: https:https:https://www.w3schools.com/cssref/css3_pr_align-items.php
@@ -157,7 +157,7 @@
       padding-left: 60px;
     }
     
-    #blockB1 {
+    #blockB1 { /* box for store location and bag */ 
       width: 300px;
       height: 94px;
       position: fixed;
@@ -184,15 +184,15 @@
       padding-left: 40px;
       border: 1px solid #EDEDED;
       display: flex; /* flex box makes the navigation bar easier to style */
-      
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
-     /*Code copied from: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+    }
+    
+    /*Code copied from: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
     Author: MDN Contributors
     Name: box-shadow
     Description: The CSS Styling for aligning items in the box is referenced frorm W3SChools
     Date retrieved: 6 December 2024
     */
-    }
     
    #blockD { /* search bar */ 
       width: 700px;
@@ -350,6 +350,7 @@
     #blockI { /* enter email box */ 
       width: 100%;
       height: 380px; 
+      background-color: white;
       display: flex;
       flex-wrap: wrap;
       align-items: center; 
@@ -363,7 +364,6 @@
       position: absolute;
       background-color: rgba(44, 36, 36, 0.9); /* opacity */
       border-radius: 10px;
-      
       display: flex;
       flex-direction: column;
       align-items: center; 
@@ -446,7 +446,7 @@
       position: absolute;
       top: 20%;
       left: 50%; 
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); /* transform to fix position */
     }
     
     #blockJ2 {
@@ -543,7 +543,7 @@
       <h5> <b>ANNUAL HOLIDAY <br> SALE! </b> </h5>
       <div id="blockF">
         <h3> <a href="https://j45sun.github.io/A3.2/">
-          Shop Now &gt </a> <!-- the &gt is used as an empty character -->
+          Shop Now &gt </a> <!-- the &gt is used as the ">" character -->
         </h3>
       </div>
     </div>
