@@ -35,6 +35,7 @@
       width: 100%;
       height: 100%;
       background-color: white;
+      box-sizing: border-box;
     }
     
     h1 {font-family: DM Sans;
@@ -64,7 +65,7 @@
       letter-spacing: 1px;
       padding-left: 60px;
       padding-top: 25px;
-    } /* special header */
+    } /* this header is used specifically for the "reviews" header since I can't figure out why the color is not the color that I want it to be */
     
     p {font-family: Albert Sans;
       font-size: 10px;
@@ -91,10 +92,9 @@
       overflow: hidden;
       background-color: transparent;
       position: absolute;
-        
-      display: flex; /* Use flexbox to align list items horizontally */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */;  
+      display: flex;
+      margin: 0;
+      padding: 0;  
     }
 
     li {
@@ -119,23 +119,35 @@
       color: #E76B6B;
       opacity: 1;
     }
+     
+    /*Code copied from: https:https://www.w3schools.com/css/css_navbar.asp
+    Author: W3Schools
+    Name: CSS Navigation Bar
+    Description: The CSS Styling for the navigation bar was referenced frorm W3SChools
+    Date retrieved: 6 December 2024 */
       
-      #blockA {
+    #blockA { /* top yellow box */
       width: 100%;
       height: 42px;
       background-color: #F9D788;
       position: fixed;
       display: flex;
       align-items: center; 
-      justify-content: center; /* cite this */
-      z-index: 1000; /*cite this*/
-    }
+      justify-content: center; 
+      z-index: 1000; 
+    } 
+    
+    /*Code copied from: https:https:https://www.w3schools.com/cssref/css3_pr_align-items.php
+    Author: W3Schools
+    Name: CSS align-items Property
+    Description: The CSS Styling for aligning items in the box is referenced frorm W3SChools
+    Date retrieved: 6 December 2024 */
     
      #blockA h4 {
       color: #5F3B25;
     }
     
-        #blockB {
+    #blockB { /* Second box below yellow box */ 
       width: 100%;
       height: 94px;
       background-color: white;
@@ -145,7 +157,7 @@
       padding-left: 60px;
     }
     
-     #blockB1 {
+    #blockB1 {
       width: 300px;
       height: 94px;
       position: fixed;
@@ -162,7 +174,7 @@
       color: #6C6B6B;
     }
     
-    #blockC {
+    #blockC { /* navigation bar */ 
        width: 100%;
       height: 30px;
       background-color: white;
@@ -171,14 +183,18 @@
       padding-top: 12px;
       padding-left: 40px;
       border: 1px solid #EDEDED;
-      display: flex;
+      display: flex; /* flex box makes the navigation bar easier to style */
       
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
-      /*cite this*/
-
+     /*Code copied from: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+    Author: MDN Contributors
+    Name: box-shadow
+    Description: The CSS Styling for aligning items in the box is referenced frorm W3SChools
+    Date retrieved: 6 Decembe
+    */
     }
     
-   #blockD {
+   #blockD { /* search bar */ 
       width: 700px;
       height: 42px;
       background-color: #F1F1F1;
@@ -198,31 +214,30 @@
       color: #999999;
     }  
     
-    #blockE {
+    #blockE { 
       width: 100%;
       height: 400px;
-      position: relative; /* Stacks #blockE in the normal flow below #blockC */
-      top: 178px;  /* Ensures it appears below blockC (136px height + extra spacing) */
+      position: relative;
+      top: 178px;
     }
 
     #blockE img {
       width: 100%;
       height: 100%;
-    }
+    } /* ensures that the image in blockE fits the bloc entirely */
 
     .text-overlay {
       position: absolute;
       top: 50px;
       left: 270px;
-      
-    }
+    } 
 
     .text-overlay h5 {
       font-family: Albert Sans;
       color: white;
-      font-size: 4vw; /* Scales with viewport width */
+      font-size: 4vw; /* Scales with viewport width since the text appeared smaller on published website */
       margin: 0;
-      line-height: 1.2; /* Better spacing between lines */
+      line-height: 1.2;
       letter-spacing: 3px;
     }
     
@@ -230,12 +245,12 @@
       font-family: Albert Sans;
       color: white;
       font-weight: 400px;
-      font-size: 1.5vw; /* Scales with viewport width */
-      margin: 0px; /* Adds spacing below */
+      font-size: 1.5vw; 
+      margin: 0px; 
       letter-spacing: 2px;
     }
     
-    #blockF {
+    #blockF { /* Shop now */ 
       width: 200px;
       height: 42px;
       margin-top: 30px;
@@ -259,12 +274,11 @@
       justify-content: center;
     }  
     
-    #blockH {
+    #blockH { /* Bestsellers */ 
       width: 1065px;;
       height: 320px;
       background-color: white;
-      /* Set the desired height */ 
-      position: relative; /* Maintain normal flow positioning */
+      position: relative;
       padding-top: 20px;
       padding-left: 270px;
       
@@ -333,7 +347,7 @@
       margin-right: 60px;
     }
     
-    #blockI {
+    #blockI { /* enter email box */ 
       width: 100%;
       height: 380px; 
       display: flex;
@@ -347,7 +361,7 @@
       width: 900px;
       height: 250px;
       position: absolute;
-      background-color: rgba(44, 36, 36, 0.9);
+      background-color: rgba(44, 36, 36, 0.9); /* opacity */
       border-radius: 10px;
       
       display: flex;
@@ -438,7 +452,7 @@
     #blockJ2 {
       width: 420px;
       height: 269px;
-      background-color: white; /* Placeholder color */
+      background-color: white; 
       position: absolute;
       left: 60px;
       right: 40px;
@@ -450,22 +464,22 @@
     #blockJ3 {
       width: 463px;
       height: 269px;
-      background-color: white; /* Placeholder color */
+      background-color: white;
       position: absolute;
-      left: calc(60px + 420px + 20px); /* Position to the right of blockJ2 with a margin of 21px */
-      top: 100px; /* Same top as blockJ2 */
+      left: calc(60px + 420px + 20px); /* calculate the margins */
+      top: 100px; 
     }
     
     #blockJ4 {
       width: 463px;
       height: 269px;
-      background-color: white; /* Placeholder color */
-      position: absolute; /* Add this to enable positioning */
-      left: calc(60px + 420px + 20px + 420px + 60px); /* Correct the calculation */
-      top: 100px; /* Same top as blockJ2 */
+      background-color: white;
+      position: absolute; 
+      left: calc(60px + 420px + 20px + 420px + 60px); 
+      top: 100px; 
     }
     
-    #blockK {
+    #blockK { /* reviews */
       width: 100%;
       height: 330px;;
       background-color: #555555; 
@@ -504,6 +518,13 @@
       letter-spacing: 1px;
     }
     
+    /*
+    Code copied from: https://www.w3schools.com/html/html_tables.asp
+    Author: w3schools
+    Name: HTML Tables
+    Description: referenced how to make and edit tables
+    Date retrieved: 7 december 2024
+    */
     
    </style>
 </head>
@@ -521,8 +542,8 @@
       <h6>Xenia Taler's</h6>
       <h5> <b>ANNUAL HOLIDAY <br> SALE! </b> </h5>
       <div id="blockF">
-        <h3>
-          Shop Now &gt
+        <h3> <a href="https://j45sun.github.io/A3.2/">
+          Shop Now &gt </a> <!-- the &gt is used as an empty character -->
         </h3>
       </div>
     </div>
